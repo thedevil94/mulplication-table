@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multiplication-table</title>
+</head>
+<body>
+<h1>Multiplication table</h1>
+<script type="text/javascript">
+    mul = "<table border='1' width='300' cellspacing='0' cellpadding='5'>"
+    for (let i = 2; i <= 9; i++) {
+        mul = mul + "<tr>";
+        for (let j = 1; j <= 9; j++) {
+            mul = mul + "<td>" + (i + "x" + j + "=" + (i * j)) + "</td>";
+        }
+        mul = mul + "</tr>";
+    }
+    mul = mul + "</table>";
+    document.write(mul);
+</script>
+</body>
+</html>
